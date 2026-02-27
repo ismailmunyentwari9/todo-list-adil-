@@ -1,87 +1,36 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Todo-List</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  <body>
-    
 
-    <section class="bg-[#E5E5E5] h-[100vh]">
-      <h1 class="text-6xl text-center mb-5 font-bold">
+<head>
+  <title>Todo-List</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+
+  <section class="bg-[#E5E5E5] h-[150vh]">
+    <h1 class="text-6xl text-center mb-5 font-bold">
       Personal
     </h1>
-     <!-- todo container 👇👇👇 -->
-    <div class="flex flex-col gap-5 items-center  todo-container ">
-      <!-- todo Lists 👇👇👇 -->
-       <div class="  todo-list justify-between p-5  bg-[#F3EFEE] h-[10vh] w-[60%] rounded-2xl flex">
-          <div class="left flex items-center gap-5">
-            <input  type="checkbox" name="" id="">
-            <p class="text-xl">Drink 8 glasses of water</p>
-          </div>
-             <div class="right">
-              <img src="./assets/Frame 2609477.png" alt="">
-             </div>
-       </div>
+    <!-- todo container 👇👇👇 -->
+    <div class="flex flex-col gap-5 items-center  todo-container  py-10">
+      <div id="lists-container" class="w-[70%] flex flex-col gap-5 items-center  todo-container  py-10">
+       <!-- List Container -->
 
-        <!-- todo Lists 👇👇👇 -->
-       <div class="  todo-list justify-between p-5  bg-[#F3EFEE] h-[10vh] w-[60%] rounded-2xl flex">
-          <div class="left flex items-center gap-5">
-            <input  type="checkbox" name="" id="">
-            <p class="text-xl">Drink 8 glasses of water</p>
-          </div>
-             <div class="right">
-              <img src="./assets/Frame 2609477.png" alt="">
-             </div>
-       </div>
+      </div>
 
-        <!-- todo Lists 👇👇👇 -->
-       <div class="  todo-list justify-between p-5  bg-[#F3EFEE] h-[10vh] w-[60%] rounded-2xl flex">
-          <div class="left flex items-center gap-5">
-            <input  type="checkbox" name="" id="">
-            <p class="text-xl">Drink 8 glasses of water</p>
-          </div>
-             <div class="right">
-              <img src="./assets/Frame 2609477.png" alt="">
-             </div>
-       </div>
 
-        <!-- todo Lists 👇👇👇 -->
-       <div class="  todo-list justify-between p-5  bg-[#F3EFEE] h-[10vh] w-[60%] rounded-2xl flex">
-          <div class="left flex items-center gap-5">
-            <input  type="checkbox" name="" id="">
-            <p class="text-xl">Drink 8 glasses of water</p>
-          </div>
-             <div class="right">
-              <img src="./assets/Frame 2609477.png" alt="">
-             </div>
-       </div>
 
-        <!-- todo Lists 👇👇👇 -->
-       <div class="  todo-list justify-between p-5  bg-[#F3EFEE] h-[10vh] w-[60%] rounded-2xl flex">
-          <div class="left flex items-center gap-5">
-            <input  type="checkbox" name="" id="">
-            <p class="text-xl">Drink 8 glasses of water</p>
-          </div>
-             <div class="right">
-              <img src="./assets/Frame 2609477.png" alt="">
-             </div>
-       </div>
 
-        <!-- todo Lists 👇👇👇 -->
-       <div class="  todo-list justify-between p-5  bg-[#F3EFEE] h-[10vh] w-[60%] rounded-2xl flex">
-          <div class="left flex items-center gap-5">
-            <input  type="checkbox" name="" id="">
-            <p class="text-xl">Drink 8 glasses of water</p>
-          </div>
-             <div class="right">
-              <img src="./assets/Frame 2609477.png" alt="">
-             </div>
-       </div>
+      <input class="border w-[60%]" id="taskInput" placeholder="Enter task">
+      <button class="border border-green-500 w-[60%] bg-green-900 text-white" onclick="addTask()">Add</button>
     </div>
 
-    </section>
-  </body>
+  </section>
+</body>
+<script src="./todo.js"></script>
+
 </html>
